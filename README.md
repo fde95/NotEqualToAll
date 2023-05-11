@@ -8,7 +8,9 @@
   <img align="center" alt="fde95-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="fde95-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="jQuery" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg">
+  <img align="center" alt="Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
 </div>
+
 
 <h3> Sobre o Projeto </h3>
 Gostaria de compartilhar com vocês um dos exercícios mais interessantes que realizei durante o curso de Engenharia Front-End da EBAC. No módulo 13, aprendemos a utilizar o framework Bootstrap e o desafio consistiu em desenvolver uma página web responsiva com carrossel e cards em grid.
