@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>!=</title>
+</head>
+<body>
+        <header id="navegacao"> <!--ID Necessário para SPY do Bootstrap-->
+            <div class="navbar navbar-expand-lg"> <!--Chama a função Barra de Navegação / "navbar-expand-lg" Ocutará o menu Hamburguer para Resoluções maiores no CSS Responsivo-->
+                <div class="container container-sm container-md">
+                    <h1>!EqualToAll</h1>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> <!--Criando um botão Hamburger / O Toggle Collapse executará o Nav Bar-->
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <nav class="collapse navbar-collapse justify-content-end"  id="menu"> <!--A classe Collapse irá ocutar o menu até que ele seja executado pelo botão / "justify-content-end" Justificará o Menu no final da DIV em maiores resoluções (css responsivo)-->
+                    <ul class="nav navbar-nav nav-pills"><!--A UL deve estar na classe NAV para listagem dos links - Nav-Pills para espaçamento / Navbar-Nav Listará o menu em bloco-->
+                        <li class="nav-item"> <!--Conteudo da NAV-->
+                            <a class="nav-link active" href="./index.html">Home</a><!--Nav-Link para estilização de link de navegação / Active para exibição de botão selecionado no momento-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dabout">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dsolution">Portifólio</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </header>        
+        <div data-bs-spy="scroll" data-bs-target="#navegacao"> <!--Função de acompanhamento do Menu de acordo com a section de referencia-->
+
+
+                <div id="carrossel-exemplo"  class="carousel carousel-fade slide" data-bs-ride="carousel"> <!--Chamada de Função Carrossel Bootstrap / Adicionar ID para lincar ao botão de ação / CAROUSEL-FADE corresponde ao efeito de transição-->
+                    <div class="carousel-inner"> <!--Separação de conteúdo a ser exibido-->
+                        <div data-bs-interval="2500" class="carousel-item active"><!--Item para apresentação de Item UNT / Data-bs-Interval=Intervalo de apresentação "Número em milisegundos"-->
+                            <img class="d-block w-100" src="./img/banner1.png" alt="Cervo"> <!--A Classe D-BLOCK = Display Block - W-100 = Width 100% redimenciona a imagem à resolução da tela ou do container-->
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item"> <!--A classificação de Milisegundos pode ser diferente para cada Item UNT-->
+                            <img class="d-block w-100" src="./img/banner2.png" alt="Galho">
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item"> <!--Diferente do Carrossel feito pelo JS, neste não é possível alterar as imagens manualmente dando o slide right ou left, deve-se aguardar o tempo determinado-->
+                            <img class="d-block w-100" src="./img/banner4.png" alt="Galinha">
+                        </div>
+                        <div data-bs-interval="2500" class="carousel-item"> <!--Diferente do Carrossel feito pelo JS, neste não é possível alterar as imagens manualmente dando o slide right ou left, deve-se aguardar o tempo determinado-->
+                            <img class="d-block w-100" src="./img/banner3.png" alt="Galinha">
+                        </div>
+                    </div>
+                    
+                    <button data-bs-target="#carrossel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button"> <!--Botão INDISPENSÁVEL par ação de retornar ou passar imagem apresentada / INDISPENSÁVEL lincagem do DATA-BS-TARGET com ID da chamada do Carrossel / DATA-BS-SLIDE="PREV" corresponde ao retorno do conteúdo apresentado anteriormente-->
+                        <span class="carousel-control-prev-icon"></span> <!--Icone de seta para mudança de Slide dentro do Carrossel-->
+                    </button>
+                    <button data-bs-target="#carrossel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button"> <!--Mesmo principio do anterior porém com a função NEXT-->
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+            
+                    <div class="carousel-indicators"> <!--Indicador de imagem apresentada (barra inferior)-->
+                        <button type="button" data-bs-target="#carrossel-exemplo" class="active" data-bs-slide-to="0"></button> <!--DATA-BS-SLIDE-TO funciona como ARRAY, então deve sempre começar na posição 0-->
+                        <button type="button" data-bs-target="#carrossel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carrossel-exemplo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carrossel-exemplo" data-bs-slide-to="3"></button>
+                    </div>
+                </div> <!--Fim do Carrossel-->
+
+            <section id="dhome">
+                <div class="container container-sm container-md">
+                    <h2>Felipe Espinoza</h2>
+                    <p>Dev Front-End</p>                    
+                </div>
+            </section>
+        
+            <section id="dabout">
+                <div class="container container-sm container-md">
+                    <h2>SOBRE</h2>
+                    <p>
+                        Olá! Meu nome é Felipe Espinoza e estou em processo de migração de carreira.
+                        Após anos atuação no setor marketing em uma multinacional, decidi me dedicar a minha verdadeira paixão que é programação, mais especificamente em front-end. 
+                        Com a mudança de carreira, vi a necessidade de me especializar e entender como funciona este mercado, decidi então iniciar uma nova graduação, onde estou cursando 
+                        Engenharia da Computação na faculdade Descomplica e também sou aluno no curso profissionalizante de engenheiro front-end da EBAC (Escola Britânica de Artes Criativas & Tecnologia). 
+                        E em fevereiro de 2023 conclui o curso de Figma da própria EBAC, para poder aprimorar ainda as habilidades necessárias dentro do front-end. Este site é um projeto do curso de 
+                        engenharia front-end da EBAC onde tivemos como desafio, o desenvolvimento desta página para podermos exercitar e aprimorar nossas habilidades com o Bootstrap!
+                    </p>
+                    <div class="row skills pt-4">
+                        <div class="col-12">
+                            skills {
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <img id="jquery" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="dsolution">
+                <div class="container container-sm container-md">
+                    <h2>PORTIFÓLIO</h2>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Desafio Pessoal</strong>
+                                </header>
+                                <img src="./img/card1NovaImagem.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>Nova Imagem</strong></h4>
+                                    <p class="card-text">
+                                        Ideia de layout para empresa
+                                    </p>
+                                    <a href="https://github.com/fde95/novaImagem" target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 11/05/2023 15:32</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Curso EBAC</strong>
+                                </header>
+                                <img src="./img/card2UrbanCo.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>Urban Co.</strong></h4>
+                                    <p class="card-text">
+                                        Exercicio do módulo 11 - Curso EBAC
+                                    </p>
+                                    <a href="https://github.com/fde95/UrbanCo." target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 03/05/2023 19:12</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Curso EBAC</strong>
+                                </header>
+                                <img src="./img/card3MercatoMotori.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>Mercato Motori</strong></h4>
+                                    <p class="card-text">
+                                        Exercicio do módulo 10 - Curso EBAC
+                                    </p>
+                                    <a href="https://github.com/fde95/MercatoMotori" target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 25/04/2023 12:01</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Desafio Pessoal</strong>
+                                </header>
+                                <img src="./img/card4JustDo.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>justDo!</strong></h4>
+                                    <p class="card-text">
+                                        Lista de tarefas com armazenagem local
+                                    </p>
+                                    <a href="https://github.com/fde95/listaTarefas" target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 18/04/2023 01:54</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Projeto 2 - EBAC</strong>
+                                </header>
+                                <img src="./img/card5YourNetwork.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>yourNetwork!</strong></h4>
+                                    <p class="card-text">
+                                        Projeto de finalização de módulo - EBAC
+                                    </p>
+                                    <a href="https://github.com/fde95/projetoAgendadeContatos" target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 15/04/2023 04:29</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
+                            <article class="card">
+                                <header class="card-header">
+                                    <strong>Curso EBAC</strong>
+                                </header>
+                                <img src="./img/card6GameShop.png" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-tittle"><strong>Game Shop</strong></h4>
+                                    <p class="card-text">
+                                        Exercicio do módulo 2 - Curso EBAC
+                                    </p>
+                                    <a href="https://github.com/fde95/site_gameshop" target="_blank" class="btn btn-success w-100">Leia mais</a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time>Postado em 09/04/2023 14:55</time>
+                                </footer>
+                            </article>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container container-sm container-md">
+            <footer>
+                2023 &copy; Criado e Desenvolvido por <strong>Felipe Espinoza</strong>
+            </footer>
+        </div>
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
