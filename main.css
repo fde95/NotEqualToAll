@@ -129,15 +129,31 @@ footer{
 @media screen and (max-width: 767px){
     
 #dhome{
-    margin-bottom: -200px;
+    height: auto;
+    margin-bottom: 190px;
+}
+
+#dhome h2{
+    font-size: 4em;
+}
+
+#dhome p{
+    font-size: 2em;
+}
+
+.carousel-indicators{
+    display: none;
 }
 
 
 #dabout{
+    display: block;
+    height: auto;
     background-color: greenyellow;
     color: #000;
     font-weight: 600;
-    margin-bottom: -250px;
+    margin-bottom: 0px;
+    padding-bottom: 80px;
 }
 
 
@@ -159,7 +175,8 @@ footer{
 
 
 #dsolution{
-    margin-bottom: 3460px;
+    margin-bottom:0;
+    height: auto;
 }
 
 
@@ -185,6 +202,9 @@ footer{
     margin-bottom: -300px;
 }
 
+.carousel-indicators{
+    display: none;
+}
 
 #dabout{
     background-color: greenyellow;
@@ -202,6 +222,12 @@ footer{
 #dsolution{
     margin-bottom: 1000px;
 }
+
+.card{
+    background-color: greenyellow;
+    transition: 1s;
+}
+
 
 footer{
     text-align: center;
